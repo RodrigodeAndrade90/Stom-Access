@@ -1,64 +1,62 @@
-// Classes base para componentes específicos
 class DataHora {
     constructor(
-        public Data: Date,
-        public Time: string
+        public data: Date,
+        public hora: string
     ) {}
 }
 
 class Temperatura {
     constructor(
-        public Temp_C: number,
-        public TempCabine_C: number
+        public temperaturaC: number,
+        public temperaturaCabineC: number
     ) {}
 }
 
 class Umidade {
     constructor(
-        public Hum: number
+        public umidade: number
     ) {}
 }
 
 class Pressao {
     constructor(
-        public Press_Bar: number
+        public pressaoBar: number
     ) {}
 }
 
 class Carga {
     constructor(
-        public Charge: number
+        public carga: number
     ) {}
 }
 
 class RadiacaoSolar {
     constructor(
-        public SR_Wm2: number
+        public radiacaoWm2: number
     ) {}
 }
 
-class VentoPico {
+class PicoVento {
     constructor(
-        public WindPeak_ms: number
+        public picoVentoMs: number
     ) {}
 }
 
 class VelocidadeVento {
     constructor(
-        public WindSpeed_Inst: number,
-        public WindSpeed_Avg: number
+        public velocidadeInstMs: number,
+        public velocidadeMediaMs: number
     ) {}
 }
 
 class DirecaoVento {
     constructor(
-        public WindDir_Inst: number,
-        public WindDir_Avg: number
+        public direcaoInst: number,
+        public direcaoMedia: number
     ) {}
 }
 
-// Classe principal agregando componentes
-class Meteologico{
+class Meteorologico {
     constructor(
         public dataHora: DataHora,
         public temperatura: Temperatura,
@@ -66,10 +64,10 @@ class Meteologico{
         public pressao: Pressao,
         public carga: Carga,
         public radiacaoSolar: RadiacaoSolar,
-        public ventoPico: VentoPico,
+        public picoVento: PicoVento,
         public velocidadeVento: VelocidadeVento,
         public direcaoVento: DirecaoVento
     ) {}
 }
 
-export default Meteologico;
+export default Meteorologico;

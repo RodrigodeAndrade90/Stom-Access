@@ -1,35 +1,47 @@
-class DadosMeteologicos {
-    Data: Date;
-    Time: string;
-    Temp_C: number;
-    Hum_percent: number;
-    Press_Bar: number;
-    TempCabine_C: number;
-    Charge: number;
-    SR_Wm2: number;
-    WindPeak_ms: number;
-    WindSpeed_Inst: number;
-    WindSpeed_Avg: number;
-    WindDir_Inst: number;
-    WindDir_Avg: number;
+class DadosMeteorologicos {
+    data: Date;
+    hora: string;
+    temperaturaC: number;
+    umidadePercent: number;
+    pressaoBar: number;
+    temperaturaCabineC: number;
+    carga: number;
+    radiacaoSolarWm2: number;
+    picoVentoMs: number;
+    ventoInstMs: number;
+    ventoMedioMs: number;
+    direcaoVentoInst: number;
+    direcaoVentoMedia: number;
 
-    constructor(data: Date, time: string, temp: number, hum: number, press: number,
-        tempCabine: number, charge: number, sr: number, windPeak: number,
-        windInst: number, windAvg: number, windDirInst: number, windDirAvg: number) {
-        this.Data = data;
-        this.Time = time;
-        this.Temp_C = temp;
-        this.Hum_percent = hum;
-        this.Press_Bar = press;
-        this.TempCabine_C = tempCabine;
-        this.Charge = charge;
-        this.SR_Wm2 = sr;
-        this.WindPeak_ms = windPeak;
-        this.WindSpeed_Inst = windInst;
-        this.WindSpeed_Avg = windAvg;
-        this.WindDir_Inst = windDirInst;
-        this.WindDir_Avg = windDirAvg;
+    constructor(
+        data: Date,
+        hora: string,
+        temperatura: number,
+        umidade: number,
+        pressao: number,
+        temperaturaCabine: number,
+        carga: number,
+        radiacaoSolar: number,
+        picoVento: number,
+        ventoInst: number,
+        ventoMedio: number,
+        direcaoVentoInst: number,
+        direcaoVentoMedia: number
+    ) {
+        this.data = data;
+        this.hora = hora;
+        this.temperaturaC = temperatura;
+        this.umidadePercent = umidade;
+        this.pressaoBar = pressao;
+        this.temperaturaCabineC = temperaturaCabine;
+        this.carga = carga;
+        this.radiacaoSolarWm2 = radiacaoSolar;
+        this.picoVentoMs = picoVento;
+        this.ventoInstMs = ventoInst;
+        this.ventoMedioMs = ventoMedio;
+        this.direcaoVentoInst = direcaoVentoInst;
+        this.direcaoVentoMedia = direcaoVentoMedia;
     }
 }
 
-export default DadosMeteologicos;
+export default DadosMeteorologicos;

@@ -1,5 +1,4 @@
 class UsuarioEstacao {
-    Matricula: string;
     Nome: string;
     AcessoNivel: number;
     EstacoesResponsaveis: string[];
