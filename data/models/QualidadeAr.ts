@@ -1,16 +1,17 @@
 class QualidadeAr {
-    Data: Date;
-    PM2_5: number;
-    PM10: number;
-    Ozonio_ppb: number;
-    CO_ppm: number;
+    data: Date;
+    pm25: number;
+    pm10: number;
+    ozonioPpb: number;
+    coPpm: number;
 
-    constructor(data: Date, pm25: number, pm10: number, ozonio: number, co: number) {
-        this.Data = data;
-        this.PM2_5 = pm25;
-        this.PM10 = pm10;
-        this.Ozonio_ppb = ozonio;
-        this.CO_ppm = co;
+    constructor(data: Date, pm25: number, pm10: number, ozonioPpb: number, coPpm: number) {
+        this.data = data;
+        this.pm25 = pm25;
+        this.pm10 = pm10;
+        this.ozonioPpb = ozonioPpb;
+        this.coPpm = coPpm;
     }
 }
+
 export default QualidadeAr;

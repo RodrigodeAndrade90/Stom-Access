@@ -1,16 +1,16 @@
 class ConfiguracaoEstacao {
-    EstacaoID: string;
-    IntervaloLeitura_min: number;
-    ModoOperacao: string;
-    LimiteAlerta: object;
-    AtualizacaoFirmware: Date;
+    estacaoId: string;
+    intervaloLeituraMin: number;
+    modoOperacao: string;
+    limiteAlerta: object;
+    atualizacaoFirmware: Date;
 
-    constructor(estacao: string, intervalo: number, modo: string, limites: object, firmware: Date) {
-        this.EstacaoID = estacao;
-        this.IntervaloLeitura_min = intervalo;
-        this.ModoOperacao = modo;
-        this.LimiteAlerta = limites;
-        this.AtualizacaoFirmware = firmware;
+    constructor(estacaoId: string, intervaloLeituraMin: number, modoOperacao: string, limiteAlerta: object, atualizacaoFirmware: Date) {
+        this.estacaoId = estacaoId;
+        this.intervaloLeituraMin = intervaloLeituraMin;
+        this.modoOperacao = modoOperacao;
+        this.limiteAlerta = limiteAlerta;
+        this.atualizacaoFirmware = atualizacaoFirmware;
     }
 }
 

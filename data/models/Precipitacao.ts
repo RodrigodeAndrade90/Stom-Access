@@ -1,18 +1,17 @@
 class Precipitacao {
-    Data: Date;
-    Tipo: string;
-    Quantidade_mm: number;
-    Duracao_min: number;
-    Intensidade: string;
+    data: Date;
+    tipo: string;
+    quantidadeMm: number;
+    duracaoMin: number;
+    intensidade: string;
 
-    constructor(data: Date, tipo: string, quantidade: number, duracao: number, intensidade: string) {
-        this.Data = data;
-        this.Tipo = tipo;
-        this.Quantidade_mm = quantidade;
-        this.Duracao_min = duracao;
-        this.Intensidade = intensidade;
+    constructor(data: Date, tipo: string, quantidadeMm: number, duracaoMin: number, intensidade: string) {
+        this.data = data;
+        this.tipo = tipo;
+        this.quantidadeMm = quantidadeMm;
+        this.duracaoMin = duracaoMin;
+        this.intensidade = intensidade;
     }
 }
-
 
 export default Precipitacao;

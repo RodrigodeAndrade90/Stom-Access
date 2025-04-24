@@ -1,18 +1,18 @@
 class AlertaMeteorologico {
-    Codigo: string;
-    Tipo: string;
-    Nivel: string;
-    AreaAfetada: string;
-    ValidadeInicio: Date;
-    ValidadeFim: Date;
+    codigo: string;
+    tipo: string;
+    nivel: string;
+    areaAfetada: string;
+    validadeInicio: Date;
+    validadeFim: Date;
 
-    constructor(codigo: string, tipo: string, nivel: string, area: string, inicio: Date, fim: Date) {
-        this.Codigo = codigo;
-        this.Tipo = tipo;
-        this.Nivel = nivel;
-        this.AreaAfetada = area;
-        this.ValidadeInicio = inicio;
-        this.ValidadeFim = fim;
+    constructor(codigo: string, tipo: string, nivel: string, areaAfetada: string, validadeInicio: Date, validadeFim: Date) {
+        this.codigo = codigo;
+        this.tipo = tipo;
+        this.nivel = nivel;
+        this.areaAfetada = areaAfetada;
+        this.validadeInicio = validadeInicio;
+        this.validadeFim = validadeFim;
     }
 }
 

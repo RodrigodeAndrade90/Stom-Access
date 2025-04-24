@@ -1,18 +1,18 @@
 class HistoricoDados {
-    ID: string;
-    DataHora: Date;
-    TipoDado: string;
-    ValorAnterior: any;
-    ValorNovo: any;
-    UsuarioModificacao: string;
+    id: string;
+    dataHora: Date;
+    tipoDado: string;
+    valorAnterior: any;
+    valorNovo: any;
+    usuarioModificacao: string;
 
-    constructor(id: string, datahora: Date, tipo: string, anterior: any, novo: any, usuario: string) {
-        this.ID = id;
-        this.DataHora = datahora;
-        this.TipoDado = tipo;
-        this.ValorAnterior = anterior;
-        this.ValorNovo = novo;
-        this.UsuarioModificacao = usuario;
+    constructor(id: string, dataHora: Date, tipoDado: string, valorAnterior: any, valorNovo: any, usuarioModificacao: string) {
+        this.id = id;
+        this.dataHora = dataHora;
+        this.tipoDado = tipoDado;
+        this.valorAnterior = valorAnterior;
+        this.valorNovo = valorNovo;
+        this.usuarioModificacao = usuarioModificacao;
     }
 }
 

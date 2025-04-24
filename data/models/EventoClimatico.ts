@@ -1,20 +1,20 @@
 class EventoClimatico {
-    ID: string;
-    TipoEvento: string;
-    Intensidade: string;
-    AreaAfetada: string[];
-    DataInicio: Date;
-    DataFim: Date;
-    DanosRegistrados: string;
+    id: string;
+    tipoEvento: string;
+    intensidade: string;
+    areaAfetada: string[];
+    dataInicio: Date;
+    dataFim: Date;
+    danosRegistrados: string;
 
-    constructor(id: string, tipo: string, intensidade: string, area: string[], inicio: Date, fim: Date, danos: string) {
-        this.ID = id;
-        this.TipoEvento = tipo;
-        this.Intensidade = intensidade;
-        this.AreaAfetada = area;
-        this.DataInicio = inicio;
-        this.DataFim = fim;
-        this.DanosRegistrados = danos;
+    constructor(id: string, tipoEvento: string, intensidade: string, areaAfetada: string[], dataInicio: Date, dataFim: Date, danosRegistrados: string) {
+        this.id = id;
+        this.tipoEvento = tipoEvento;
+        this.intensidade = intensidade;
+        this.areaAfetada = areaAfetada;
+        this.dataInicio = dataInicio;
+        this.dataFim = dataFim;
+        this.danosRegistrados = danosRegistrados;
     }
 }
 

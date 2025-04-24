@@ -1,60 +1,39 @@
 class DataHora {
-    constructor(
-        public data: Date,
-        public hora: string
-    ) {}
+    constructor(public data: Date, public hora: string) {}
 }
 
 class Temperatura {
-    constructor(
-        public temperaturaC: number,
-        public temperaturaCabineC: number
-    ) {}
+    constructor(public temperaturaC: number, public temperaturaCabineC: number) {}
 }
 
 class Umidade {
-    constructor(
-        public umidade: number
-    ) {}
+    constructor(public umidade: number) {}
 }
 
 class Pressao {
-    constructor(
-        public pressaoBar: number
-    ) {}
+    constructor(public pressaoBar: number) {}
 }
 
 class Carga {
-    constructor(
-        public carga: number
-    ) {}
+    constructor(public carga: number) {}
 }
 
 class RadiacaoSolar {
-    constructor(
-        public radiacaoWm2: number
-    ) {}
+    constructor(public radiacaoWm2: number) {}
 }
 
 class PicoVento {
-    constructor(
-        public picoVentoMs: number
-    ) {}
+    constructor(public picoVentoMs: number) {}
 }
 
 class VelocidadeVento {
-    constructor(
-        public velocidadeInstMs: number,
-        public velocidadeMediaMs: number
-    ) {}
+    constructor(public velocidadeInstMs: number, public velocidadeMediaMs: number) {}
 }
 
 class DirecaoVento {
-    constructor(
-        public direcaoInst: number,
-        public direcaoMedia: number
-    ) {}
+    constructor(public direcaoInst: number, public direcaoMedia: number) {}
 }
+
 
 class Meteorologico {
     constructor(
